@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,16 +14,17 @@
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: 'Roboto Mono','monospace';
+  font-family: 'Roboto Mono', 'monospace';
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.dark{
-   background: var(--background);
-  color: var(--foreground);
+
+body {
+  background-color: #f3f4f6; 
 }
-.light{
-  background:var(--foreground);
-  color: var(--background);
+
+
+body.dark {
+  background-color: #111827; 
 }
