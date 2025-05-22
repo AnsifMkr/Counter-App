@@ -1,4 +1,3 @@
-// src/utils/theme.ts
 export const getInitialTheme = (): 'light' | 'dark' => {
   if (typeof window !== 'undefined') {
     const stored = localStorage.getItem('theme');
@@ -11,10 +10,14 @@ export const getInitialTheme = (): 'light' | 'dark' => {
 
 export const applyTheme = (theme: 'light' | 'dark') => {
   const root = window.document.documentElement;
+  const body = window.document.body;
+  
   if (theme === 'dark') {
     root.classList.add('dark');
+    body.classList.add('dark');
   } else {
     root.classList.remove('dark');
+    body.classList.remove('dark');
   }
   localStorage.setItem('theme', theme);
 };
