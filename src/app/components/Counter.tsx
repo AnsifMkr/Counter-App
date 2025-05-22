@@ -97,16 +97,16 @@ export default function Counter() {
       </div>
 
       {/* – and + */}
-      <div className="flex justify-center gap-4 mb-4">
+      <div className="flex justify-between gap-4 mb-4">
         <button
           onClick={() => setCount(c => c - 1)}
-          className="px-5 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded text-lg"
+          className="px-10 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded text-lg"
         >
           −
         </button>
         <button
           onClick={() => setCount(c => c + 1)}
-          className="px-5 py-2 bg-green-500 hover:bg-green-600 text-white rounded text-lg"
+          className="px-10 py-2 bg-green-500 hover:bg-green-600 text-white rounded text-lg"
         >
           +
         </button>
